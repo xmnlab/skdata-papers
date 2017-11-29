@@ -1,1 +1,214 @@
+% template http://math.mit.edu/~csikvari/sample_paper.tex
+\documentclass[12pt,a4paper]{amsart}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amscd}
+\usepackage{cite}
+\usepackage[latin2]{inputenc}
+\usepackage{t1enc}
+\usepackage[mathscr]{eucal}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{pict2e}
+\usepackage{epic}
+\numberwithin{equation}{section}
+\usepackage[margin=2.9cm]{geometry}
+\usepackage{epstopdf} 
 
+\def\numset#1{{\\mathbb #1}}
+
+\theoremstyle{plain}
+\newtheorem{Th}{Theorem}[section]
+\newtheorem{Lemma}[Th]{Lemma}
+\newtheorem{Cor}[Th]{Corollary}
+\newtheorem{Prop}[Th]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{Def}[Th]{Definition}
+\newtheorem{Conj}[Th]{Conjecture}
+\newtheorem{Rem}[Th]{Remark}
+\newtheorem{?}[Th]{Problem}
+\newtheorem{Ex}[Th]{Example}
+
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Hom}{{\rm{Hom}}}
+\newcommand{\diam}{{\rm{diam}}}
+\newcommand{\ovl}{\overline}
+%\newcommand{\M}{\mathbb{M}}
+
+\begin{document}
+
+\title{Scikit-Data: Improving data analysis tasks}
+
+
+\author[I. Ogasawara]{Ivan Ogasawara}
+
+% \address{La Paz, Bolivia} 
+% \email{ivan.ogasawara@gmail.com}
+
+\keywords{data, data analysis, open data, open science} 
+
+
+
+\begin{abstract} The aim of this paper is to propose a framework to data analysis tasks based on the best practices recommended on the literatures and some tools large used by data science communities.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}\label{introduction} The data analysis is a process to understand data from some knowlodge domain to answer some desired question. Data analysis can be divided in some steps, such as data collection/storage, data cleaning, visualization, etc. Usually, data analysis process has some issues: boilerplate codes, such as code to visualize data; a lot of libraries to manipulate data that can be hard to non programmers; and the demands greater than available time.
+
+This paper will focus on data preparation, data exploration and visualization of results.
+
+\section{Data Analysis}\label{data-analysis}
+
+The data analysis process is composed of following steps \cite{cuesta2016practical}:
+
+\begin{itemize}
+
+\item the statement of problem;
+\item collecting your data;
+\item cleaning the data;
+\item normalizing the data;
+\item transforming the data;
+\item exploratory statistics;
+\item exploratory visualization;
+\item predictive modeling;
+\item validating your model;
+\item visualizing and interpreting your results;
+\item deploying your solution.
+
+\end{itemize}
+
+% TODO: maybe could be removed
+These steps can be grouped as \cite{cuesta2016practical}
+
+\begin{itemize}
+\item the problem;
+\item data preparation;
+\item data exploration;
+\item predictive modeling;
+\item visualization of results;
+\end{itemize}
+
+Data analysis is a important part of Data Science. Collect, prepare and understand the dataset is a crucial task for a data scientist. For this reason, this paper sometimes treat both Data Analysis and Data Science. The discussion of the difference of these two terms is not aimed by this paper.
+
+* what is the data science workflow?
+
+This paper will focus on the following data analysis tasks: data preparation, data exploration and visualization of results. Also it will focus on data analysis reproducibility.
+
+\subsection{Quantitative data analysis}\label{quantitative-analysis}
+
+* what does "quantitative data analysis" mean?
+
+* what is the main aspects of this kind of analysis?
+
+* what is the data structure used?
+
+* is there any restriction or limitation?
+
+\subsection{Qualitative data analysis}\label{qualitative-analysis}
+
+* what does "qualitative data analysis" mean?
+
+* what is the main aspects of this kind of analysis?
+
+* what is the data structure used?
+
+* is there any restriction or limitation?
+
+
+\section{Data Analysis methods}\label{methods}
+
+In this section, it should be listed the main methods used in data analysis tasks.
+
+\subsection{Data Preparation}\label{data-preparation}
+
+* what does "data preparation" mean?
+
+Data preparation is about how to obtain, clean, normalize, and transform the data into an optimal dataset, trying to avoid any possible data quality issues such as invalid, ambiguous, out-of-range, or missing values \cite{cuesta2016practical};
+
+* what is the main methods used?
+
+\subsubsection{Data Cleaning}\label{data-cleaning}
+
+* what does "data cleaning" mean?
+
+* what is the main methods used?
+
+\subsubsection{Data Normalize}\label{data-normalize}
+
+* what does "data normalize" mean?
+
+* what is the main methods used?
+
+\subsubsection{Data Transform}\label{data-transform}
+
+* what does "data transform" mean?
+
+* what is the main methods used?
+
+
+\section{Data Analysis tools}\label{tools}
+
+In this section, it should be listed the main tools used in data analysis tasks.
+
+\subsection{Data Exploratory}\label{data-exploratory}
+
+* what does "data exploratory" mean?
+
+Data exploration is essentially looking at the processed data in a graphical or statistical form and trying to find patterns, connections, and relations in the data. Visualization is used to provide overviews in which meaningful patterns may be found \cite{cuesta2016practical}.
+
+* what is the main methods used?
+
+\subsection{Data Visualization}\label{data-visualization}
+
+* what does "data visualization" mean?
+
+In an explanatory data analysis process, simple visualization techniques are very useful for discovering patterns, since the human eye plays an important role. Sometimes, we have to generate a three-dimensional plot for finding the visual pattern. But, for getting better visual patterns, we can also use a scatter plot matrix, instead of a three-dimensional plot. In practice, the hypothesis of the study, dimensionality of the feature space, and data all play important roles in ensuring a good visualization technique \cite{cuesta2016practical}.
+
+* what is the main methods used?
+
+\subsection{Weka}\label{weka}
+
+The graphical visualizations in weka\footnote{http://www.cs.waikato.ac.nz/ml/weka/} allow in an easy way to understand the relationships between the attributes of the data set.
+
+The prior understanding of these relationships helps determine the next steps in the data analysis. While, generally, the programming of visualization of data consumes a little time, having a means of doing it automatically, without or with very little code, would facilitate a lot in the analysis of data.
+
+\subsection{OpenRefine}\label{openrefine}
+
+Cleaning / processing data can be a time-consuming task and, often, the process is repeated in the analysis of different datasets. Apart from that, having control over the steps / manipulations of the data can facilitate the analysis process without modifying the original data.
+
+OpenRefine\footnote{http://openrefine.org/} provides these resources and many other functions for data cleansing and other functions such as data reconciliation.
+
+\section{Reproducibility}\label{reproducibility}
+
+* what is reproducibility?
+
+* why a reproducible data analysis is important?
+
+* how can be performed a reproducible data analysis?
+
+% A good way to promote reproducibility for data analysis is store the operation history. This history can be used to prepare another dataset with the same steps (operations).
+
+% https://www.astm.org/DIGITAL_LIBRARY/JOURNALS/TESTEVAL/PAGES/JTE11472J.htm
+
+% http://onlinelibrary.wiley.com/doi/10.1111/j.1365-2929.2004.01932.x/full
+
+\section{Discussions}\label{discussions}
+
+* how to improve the data analysis tasks?
+
+* how to improve the data analysis reproducibility?
+
+* how could the data and metadata be stored and organized?
+
+\section{Conclusions}\label{conclusions}
+
+
+
+\bibliography{propose}{}
+\bibliographystyle{plain}
+
+\end{document}
