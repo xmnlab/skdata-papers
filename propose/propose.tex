@@ -82,7 +82,7 @@ The data analysis process is composed of following steps \cite{cuesta2016practic
 \end{itemize}
 
 % TODO: maybe could be removed
-These steps can be grouped as \cite{cuesta2016practical}
+These steps can be grouped as \cite{cuesta2016practical} such as:
 
 \begin{itemize}
 \item the problem;
@@ -92,7 +92,7 @@ These steps can be grouped as \cite{cuesta2016practical}
 \item visualization of results;
 \end{itemize}
 
-Data analysis is a important part of Data Science. Collect, prepare and understand the dataset is a crucial task for a data scientist. For this reason, this paper sometimes treat both Data Analysis and Data Science. The discussion of the difference of these two terms is not aimed by this paper.
+Data analysis is a important part of Data Science. Collect, prepare and understand the dataset is crucial tasks for a data scientist. For this reason, this paper sometimes treat also about Data Science. 
 
 * what is the data science workflow?
 
@@ -150,10 +150,6 @@ Data preparation is about how to obtain, clean, normalize, and transform the dat
 * what is the main methods used?
 
 
-\section{Data Analysis tools}\label{tools}
-
-In this section, it should be listed the main tools used in data analysis tasks.
-
 \subsection{Data Exploratory}\label{data-exploratory}
 
 * what does "data exploratory" mean?
@@ -162,6 +158,7 @@ Data exploration is essentially looking at the processed data in a graphical or 
 
 * what is the main methods used?
 
+
 \subsection{Data Visualization}\label{data-visualization}
 
 * what does "data visualization" mean?
@@ -169,6 +166,12 @@ Data exploration is essentially looking at the processed data in a graphical or 
 In an explanatory data analysis process, simple visualization techniques are very useful for discovering patterns, since the human eye plays an important role. Sometimes, we have to generate a three-dimensional plot for finding the visual pattern. But, for getting better visual patterns, we can also use a scatter plot matrix, instead of a three-dimensional plot. In practice, the hypothesis of the study, dimensionality of the feature space, and data all play important roles in ensuring a good visualization technique \cite{cuesta2016practical}.
 
 * what is the main methods used?
+
+
+\section{Data Analysis tools}\label{tools}
+
+In this section, it should be listed the main tools used in data analysis tasks.
+
 
 \subsection{Weka}\label{weka}
 
@@ -182,6 +185,57 @@ Cleaning / processing data can be a time-consuming task and, often, the process 
 
 OpenRefine\footnote{http://openrefine.org/} provides these resources and many other functions for data cleansing and other functions such as data reconciliation.
 
+\subsubsection{SciSheets}\label{scisheets}
+
+
+\subsection{Python}\label{python}
+
+Python is a multi-propose programming language. Its use by scientist is growing  and there is a variety of libraries to help the data analysis tasks, such as: \textit{NumPy}, \textit{SciPy}, \textit{Numba}, \textit{SciKit-Learn}, \textit{SymPy}, \textit{Theano}, \textit{Pandas}, \textit{Blaze}, \textit{PyMC}, \textit{Statsmodels}, \textit{Matplotlib}, \textit{IPyton/Jupyter}, etc cite{ayer2014scientists}. For these reasons, Python is used here as reference of programing language.
+
+At PyData webpage (https://pydata.org/downloads.html), there is a list of almost all libraries cited by \cite{ayer2014scientists}. PyData is a conference/community focused on data analysis using Python \footnote{more information about PyData can be found at https://pydata.org}.
+
+At SciPy (Scientific Computing with Python) 2017 Conference, there was tutorials and talks about libraries, such as: \textit{Numba}, \textit{NumPy}, \textit{SymPy}, \textit{Jupyter}, \textit{HDF5}, \textit{Pandas}, \textit{Dask}, \textit{scikit-learn}, etc\footnote{A full list of tutorials and talks can be found at: https://scipy2017.scipy.org/ehome/220975/493422/ and 
+https://scipy2017.scipy.org/ehome/220975/493418/}.
+
+To complement this list of data analysis libraries  \cite{ayer2014scientists}, another libraries widely used by (data) scientists/data analystis will be analysed. For data storage usage: \textit{h5Py}; for data manipulation usage: \textit{PySpark}\footnote{http://spark.apache.org/docs/latest/api/python/pyspark.html}, \textit{Dask}\footnote{https://dask.pydata.org/en/latest/}; for data visualization usage: \textit{PivotTable.js}\footnote{https://pivottable.js.org}, \textit{PixieDust}\footnote{https://ibm-watson-data-lab.github.io/pixiedust/}
+
+% Dataflow notebooks, Jupyter Dashboard
+
+\subsubsection{h5py}\label{h5py}
+
+* a short description about this library
+* image of library usage
+* features
+
+\subsubsection{PySpark}\label{pyspark}
+
+* a short description about this library
+* image of library usage
+* features
+
+
+\subsubsection{Dask}\label{dask}
+
+* a short description about this library
+* image of library usage
+* features
+
+
+\subsubsection{PivotTable.js}\label{pivottablejs}
+
+* a short description about this library
+* image of library usage
+* features
+
+
+\subsubsection{PixieDust}\label{pixiedust}
+
+* a short description about this library
+* image of library usage
+* features
+
+
+
 \section{Reproducibility}\label{reproducibility}
 
 * what is reproducibility?
@@ -189,6 +243,8 @@ OpenRefine\footnote{http://openrefine.org/} provides these resources and many ot
 * why a reproducible data analysis is important?
 
 * how can be performed a reproducible data analysis?
+
+* scientific communication options
 
 % A good way to promote reproducibility for data analysis is store the operation history. This history can be used to prepare another dataset with the same steps (operations).
 
@@ -212,3 +268,23 @@ OpenRefine\footnote{http://openrefine.org/} provides these resources and many ot
 \bibliographystyle{plain}
 
 \end{document}
+
+% Survey: Tools, computational libraries and programming language used to perform Data Analysis / Data Science tasks.
+% 
+% Question 1: What are the languages you use to work with Data Analysis / Data Science? (Ex: Python, R, Java, etc)
+%
+% Question 2: What are the tools you use to work with Data Analysis / Data Science? (Ex: GitHub, OpenRefine, MS Excel, Jupyter Notebook, etc)
+%
+% Question 3: If you use Python for Data Analysis / Data Science tasks, what are the python libraries you use for these tasks? (Ex: Pandas, Dask, Statsmodels, scikit-learn, etc)
+% 
+% Question 4: Do you usually publish your data on any open repository? Where?
+% 
+% Question 5: Do you usually publish your code on any open repository? Where?
+% 
+% Question 6: Do you think your data analysis usually are reproducible ? If positive, why? If not, do you are interested on do it?
+% 
+% Question 7: What are the major difficults about Data Analysis / Data Science tasks? (Ex: data cleaning, data collection, data storage, hardware limitation, insufficient time, extensive time coding, etc)
+% 
+% Question 8: If you have any comment about this form, please let us know.
+% 
+% Question 9: If we have any question about your answer, can we contact you? What is your email address?
