@@ -4,14 +4,53 @@
 
 *Please summarize your project in 140 characters or less.  For example: “Colper Science is a podcast, YouTube channel and blog about the benefits of open science (e.g., open data, open source, etc.) in research.”*
 
+Scikit-data aims: reduce boilerplate code, reduce time spent on data analysis tasks and offer a reproducible data analysis workflow.
+
+
 ## Describe the issue/problem you are trying to address
 
 *Please explain how your project resolves issues around open innovation, efficiency in regards to practicing open science (lower barriers, ease of use & integration, etc), and/or reproducibility (transparent research methods & results).*
+
+Generally, there is a lot of boilerplate code on data analysis task that could be resolved with reproducible mechanisms and easy data visualization methods. Another point is related to data publish. A lot of data analysts doesn't know about open data repositories or doesn't consider that in his/her scientific workflow communication.
+
+The main issues that scikit-data (or just skdata) should resolves: 
+
+* integration with open data repositories to publish data;
+* reproducibility on data analysis tasks through storing and recovery steps;
+
+SkData should integrate with the main data analysis/manipulation libraries on Python.
+
 
 ## List key project activities (what will you do), outputs (what will be produced through your activities, e.g. products, publications, number of workshops held and people trained) and outcomes (impact of your project on your beneficiaries during the grant period). (5000 Characters)
 
 *Additionally, please include: How will you make these products openly available? What license will you assign to published materials?*
 
+All code should be licensed by MIT license and texts should be licensed by CC-BY 4.0.
+
+The project should be structured using a open research workflow. Innitially, it is expected to be used: Open Science Framework (OSF), Journal of Open Source Software (JOSS), figshare, dataverse and GitHub.
+
+The expected project activities are:
+
+* Workflow definition;
+* Research about data analysis tasks;
+* Data collection;
+* Propose and prototype an integration between skdata and some open data repositories (at least one);
+* Propose and prototype reproducibles mechanisms to be used on data analysis;
+
+The expected outputs are:
+
+* Research texts available on OSF and GitHub;
+* Academic article published at some open journal;
+* Library publication at JOSS;
+* Code available on GitHub
+* Images used published on figshare;
+* Data collected published on dataverse;
+
+The expected outcomes are:
+
+* Data analysis time spent reduced;
+* Data analysis methods applied more transparent;
+* Improve data analysis workflow through reproducible mechanisms.
 
 ## Provide key indicators you plan to use to measure project outcomes and source of data. (2500 Characters) 
 
@@ -57,11 +96,11 @@
 
 ## Attachments
 
-## Project budget
+### Project budget
 
-## List of key staff or project members, with a description of their roles
+### List of key staff or project members, with a description of their roles
 
-### Ivan Ogasawara 
+#### Ivan Ogasawara 
 
 Roles: This member will act as researcher, designing the study of the important features to include in the computation library scikit-data. Also he will code the first verions of the library.
 
