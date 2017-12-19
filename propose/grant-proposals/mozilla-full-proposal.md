@@ -40,9 +40,10 @@ The expected project activities are:
 The expected outputs are:
 
 * Research texts available on OSF and GitHub;
+* Pre-print publication;
 * Academic article published at some open journal;
 * Library publication at JOSS;
-* Code available on GitHub
+* Code available on GitHub;
 * Images used published on figshare;
 * Data collected published on dataverse;
 
@@ -56,30 +57,81 @@ The expected outcomes are:
 
 *Please be specific as possible. Additionally, please include: What does success look like for this project?*
 
+To measure the outcomes, will be used a survey. 
+
+Before to start the survey, the surveyed should read the instructions to use the skdata library.
+
+After install and use the library, the surveyed will answer a few questions (10 questions expected).
+
+This question should measure impacts on data analysis task, such as: 
+
+* time spent;
+* integrability;
+* reproducibility;
+* usability;
+
 
 ## Explain who will benefit from the project and how you will engage with them. (2500 Characters) 
 
 *Additionally, please include: What are the communication platforms you will be using for engagement? If you’re hosting any workshops or events, are you charging participants to attend?*
 
+Data scientist, data analysist and scientist in general could be benefited using skdata library. 
+
+The communication platforms that will be expected to be used are:
+
+* Twitter;
+* Telegrams groups, such as: Scientific Python Groups, Data Python Groups, etc;
+* Research Gate;
+
+
 ## Describe the geographic location(s) in which this project will be implemented. (2500 Characters)
 
 *Additionally, please include: In which city or cities will this project take place? What geographic areas will be impacted and benefited by your project?*
 
+This project there is no geographic limitation, it can be used by any people around the world.
+
+
 ## List any risks or challenges that may affect the overall success of your project, and note how Mozilla and/or others can help you to overcome these challenges. (1250 Characters)  
+
+The main challenge of this project is:
+
+* define mechanisms to integrate into data analysis tasks to offer a minimum impact;
+
+When necessary, it should be used online communities to discuss these subjects.
 
 
 ## List your project partners, if any, and the role they will play in the project. (2500 Characters) 
 
+None.
+
 
 ## Mozilla works in the open. How will you document and share your project progress with the community?
 
+The documentation should be done in the follow format:
+
+* Markdown files should be used to explain technical issues, such as: installation, how to contribe, etc;
+* tex files should be used for paper and report;
+* Sphinx and Readthedocs should be used as a technical documentation;
+
+The project will be stored in a GitHub repository and the Open Science Framework (osf) platform should be used to connect repositories used by the project.
+
 
 ## Are other organizations working toward outcomes similar to those described in this proposal? If yes, explain how your work complements that of others or fills a key gap. (1250 Characters)
+
+There is other projects similars but fragmented:
+
+* OpenRefine can be used for data cleaning and for data analysis steps share (reproducibility);
+* The Python libraries (such as Blaze, Dask, Pandas) there are great methods for data analysis;
+* PivotTables.js, PixelDust and Weka projects there are very interesting methods for interactive data visualization.
+
+SkData should create a mechanism to integrate the main Python libraries (mainly Pandas) with reproducibility data analysis method (like OpenRefine) and a very interactive data visualization like PivotTable.js in Jupyter Notebook environment.
 
 
 ## Describe how this project fits into your organization’s mission and goals. (1250 Characters) 
 
 *Science Mini Grants are for individuals, not organizations. You may skip this question.*
+
+Not applied.
 
 ## How does this project contribute to a healthier Internet? (1250 Characters)
 
